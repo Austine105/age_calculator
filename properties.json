@@ -1,0 +1,8 @@
+{
+    "name": "Chukwuemeka Ezeokwelume",
+    "track": "backend",
+    "email": "smartniggs@gmail.com",
+    "githubUsername": "Austine105",
+    "deployedAppURL": "",
+    "explainer": "Calculate and return the age of a person, given their date of birth (dob) as query parameters to `GET /howold`"
+}

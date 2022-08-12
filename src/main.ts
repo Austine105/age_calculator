@@ -1,3 +1,5 @@
+/*eslint node/no-missing-import: "error" */
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 

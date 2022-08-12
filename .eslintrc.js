@@ -1,41 +1,41 @@
 //.eslintrc.js
 module.exports = {
   root: true,
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["node", "unicorn", "prettier", "@typescript-eslint"],
+  plugins: ['node', 'unicorn', 'prettier', '@typescript-eslint'],
   extends: [
-    "eslint:recommended",
-    "plugin:node/recommended",
-    "plugin:unicorn/recommended",
-    "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
+    'eslint:recommended',
+    'plugin:node/recommended',
+    'plugin:unicorn/recommended',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
   ],
   env: {
     node: true,
   },
   rules: {
-    "no-console": "error",
-    "unicorn/no-array-reduce": "off",
-    "prettier/prettier": "error",
-    "@typescript-eslint/no-var-requires": "off",
-    "node/no-unsupported-features/es-syntax": [
-      "error",
-      { ignores: ["modules"] },
+    'no-console': 'error',
+    'unicorn/no-array-reduce': 'off',
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-var-requires': 'off',
+    'node/no-unsupported-features/es-syntax': [
+      'error',
+      { ignores: ['modules'] },
     ],
-    "node/no-missing-import": ["error", {
-      "allowModules": [],
-      "resolvePaths": ["/src"],
-      "tryExtensions": [".js", ".json", ".node"]
+    'node/no-missing-import': ['error', {
+      'allowModules': [],
+      'resolvePaths': ['/src'],
+      'tryExtensions': ['.js', '.json', '.node']
     }]
   },
   settings: {
     node: {
-      tryExtensions: [".js", ".json", ".node", ".ts"],
+      tryExtensions: ['.js', '.json', '.node', '.ts'],
     },
   },
 };

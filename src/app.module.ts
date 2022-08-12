@@ -5,10 +5,10 @@ import { ThrottlerModule } from '@nestjs/throttler';
 
 @Module({
   // rate limiter
-  imports: [ThrottlerModule.forRoot({
-    ttl: 1,
-    limit: 3,
-  })],
+  // imports: [ThrottlerModule.forRoot({
+  //   ttl: 1,
+  //   limit: 3,
+  // })],
   providers: [AppService,],
   controllers: [AppController]
 })

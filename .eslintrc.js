@@ -29,7 +29,7 @@ module.exports = {
     ],
     "node/no-missing-import": ["error", {
       "allowModules": [],
-      "resolvePaths": ["/path/to/a/modules/directory"],
+      "resolvePaths": ["/src"],
       "tryExtensions": [".js", ".json", ".node"]
     }]
   },

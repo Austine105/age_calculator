@@ -28,9 +28,7 @@ module.exports = {
       { ignores: ["modules"] },
     ],
     "node/no-missing-import": ["error", {
-      "allowModules": [],
-      "resolvePaths": ["/src"],
-      "tryExtensions": [".js", ".json", ".node"]
+      "allowModules": ["@nestjs", "@nestjs/common"]
     }]
   },
   settings: {

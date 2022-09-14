@@ -24,13 +24,15 @@ module.exports = {
     "unicorn/no-array-reduce": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/no-var-requires": "off",
-    "node/no-unsupported-features/es-syntax": [
-      "error",
-      { ignores: ["modules"] },
-    ],
+    "node/no-missing-import": off
+    // "node/no-unsupported-features/es-syntax": [
+    //   "error",
+    //   { ignores: ["modules"] },
+    // ],
   },
   settings: {
     node: {
+      "resolvePaths": [__dirname],
       tryExtensions: [".js", ".json", ".node", ".ts"],
     },
   },

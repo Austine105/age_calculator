@@ -6,7 +6,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["node", "unicorn", "prettier", "@typescript-eslint"],
+  plugins: ["node", "unicorn", "prettier", "@typescript-eslint", "nestjs"],
   extends: [
     "eslint:recommended",
     "plugin:node/recommended",
@@ -14,6 +14,7 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:nestjs/recommended"
   ],
   env: {
     node: true,
@@ -27,9 +28,6 @@ module.exports = {
       "error",
       { ignores: ["modules"] },
     ],
-    "node/no-missing-import": ["error", {
-      "allowModules": ["@nestjs", "@nestjs/common"]
-    }]
   },
   settings: {
     node: {

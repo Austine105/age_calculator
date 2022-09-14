@@ -6,7 +6,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["node", "unicorn", "prettier", "@typescript-eslint"],
+  plugins: ["node", "unicorn", "prettier", "@typescript-eslint", "nestjs"],
   extends: [
     "eslint:recommended",
     "plugin:node/recommended",
@@ -14,6 +14,7 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:nestjs/recommended"
   ],
   env: {
     node: true,
@@ -23,18 +24,16 @@ module.exports = {
     "unicorn/no-array-reduce": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/no-var-requires": "off",
-    "node/no-unsupported-features/es-syntax": [
-      "error",
-      { ignores: ["modules"] },
-    ],
-    "node/no-missing-import": ["error", {
-      "allowModules": [],
-      "resolvePaths": ["/src"],
-      "tryExtensions": [".js", ".json", ".node"]
-    }]
+    "node/no-missing-import": "off",
+    "node/no-unsupported-features/es-syntax": "off"
+    // "node/no-unsupported-features/es-syntax": [
+    //   "error",
+    //   { ignores: ["modules"] },
+    // ],
   },
   settings: {
     node: {
+      "resolvePaths": [__dirname],
       tryExtensions: [".js", ".json", ".node", ".ts"],
     },
   },

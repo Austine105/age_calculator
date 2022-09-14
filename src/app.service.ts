@@ -4,7 +4,11 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 export class AppService {
   calculateAge(dob: number): number {
 
-    const age = new Date().getFullYear() - new Date(+dob).getFullYear();
+    const currentYear = new Date().getFullYear();
+    const yearOfDob = new Date(+dob).getFullYear()
+    new Date().getMilliseconds()
+    console.log('yearOfDob: ' + yearOfDob);
+    const age = currentYear - yearOfDob;
 
 
     if (age < 1 || isNaN(age))

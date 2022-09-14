@@ -8,3 +8,6 @@ Build and deploy a very simple API that does the following
 
 See full details and instructions in this [Google Doc](https://docs.google.com/document/d/1ma5vKz0j34gwI9WYrZddMM1ENlQddGOVFJ5qdSq2QlQ)# age_calculator
 # age_calculator
+
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5f779b6742e048bc921f718a8c02717c)](https://www.codacy.com/gh/Austine105/age_calculator/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Austine105/age_calculator&amp;utm_campaign=Badge_Grade)

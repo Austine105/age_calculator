@@ -24,7 +24,8 @@ module.exports = {
     "unicorn/no-array-reduce": "off",
     "prettier/prettier": "error",
     "@typescript-eslint/no-var-requires": "off",
-    "node/no-missing-import": off
+    "node/no-missing-import": "off",
+    "node/no-unsupported-features/es-syntax": "off"
     // "node/no-unsupported-features/es-syntax": [
     //   "error",
     //   { ignores: ["modules"] },
